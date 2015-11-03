@@ -1,0 +1,9 @@
+I:\Study\Dot_Net_Code\00SpecialTechnology\07WCF&WebServices\Wcf\WcfStudy\WindowsServiceForWcfService\bin\Debug\WindowsServiceForWcfService.exe
+I:\Study\Dot_Net_Code\00SpecialTechnology\07WCF&WebServices\Wcf\WcfStudy\WindowsServiceForWcfService\bin\Debug\WindowsServiceForWcfService.pdb
+I:\Study\Dot_Net_Code\00SpecialTechnology\07WCF&WebServices\Wcf\WcfStudy\WindowsServiceForWcfService\bin\Debug\WcfServiceLibrary.exe
+I:\Study\Dot_Net_Code\00SpecialTechnology\07WCF&WebServices\Wcf\WcfStudy\WindowsServiceForWcfService\bin\Debug\WcfServiceLibrary.pdb
+I:\Study\Dot_Net_Code\00SpecialTechnology\07WCF&WebServices\Wcf\WcfStudy\WindowsServiceForWcfService\obj\Debug\WindowsServiceForWcfService.csprojResolveAssemblyReference.cache
+I:\Study\Dot_Net_Code\00SpecialTechnology\07WCF&WebServices\Wcf\WcfStudy\WindowsServiceForWcfService\obj\Debug\WindowsServiceForWcfService.exe
+I:\Study\Dot_Net_Code\00SpecialTechnology\07WCF&WebServices\Wcf\WcfStudy\WindowsServiceForWcfService\obj\Debug\WindowsServiceForWcfService.pdb
+I:\Study\Dot_Net_Code\00SpecialTechnology\07WCF&WebServices\Wcf\WcfStudy\WindowsServiceForWcfService\obj\Debug\WindowsServiceForWcfService.ProjectInstaller.resources
+I:\Study\Dot_Net_Code\00SpecialTechnology\07WCF&WebServices\Wcf\WcfStudy\WindowsServiceForWcfService\obj\Debug\WindowsServiceForWcfService.csproj.GenerateResource.Cache

@@ -1,0 +1,6 @@
+I:\Study\Dot_Net_Code\00SpecialTechnology\07WCF&WebServices\Wcf\WcfStudy\WcfServiceLibrary\bin\Debug\WcfServiceLibrary.pdb
+I:\Study\Dot_Net_Code\00SpecialTechnology\07WCF&WebServices\Wcf\WcfStudy\WcfServiceLibrary\obj\Debug\WcfServiceLibrary.pdb
+I:\Study\Dot_Net_Code\00SpecialTechnology\07WCF&WebServices\Wcf\WcfStudy\WcfServiceLibrary\bin\Debug\WcfServiceLibrary.exe.config
+I:\Study\Dot_Net_Code\00SpecialTechnology\07WCF&WebServices\Wcf\WcfStudy\WcfServiceLibrary\bin\Debug\WcfServiceLibrary.exe
+I:\Study\Dot_Net_Code\00SpecialTechnology\07WCF&WebServices\Wcf\WcfStudy\WcfServiceLibrary\obj\Debug\WcfServiceLibrary.exe
+I:\Study\Dot_Net_Code\00SpecialTechnology\07WCF&WebServices\Wcf\WcfStudy\WcfServiceLibrary\obj\Debug\WcfServiceLibrary.csprojResolveAssemblyReference.cache

@@ -1,0 +1,92 @@
+通讯框架：
+	1、简单webapi
+		1、webapi的形式:http://www.domain.com/api/info.ashx
+		2、api会以文档的形式约定其中的传入参数，返回数据格式
+		3、可以利用System.Net.WebRequest 对webapi进行请求
+		写法样例：
+		 //模拟浏览器请求http://localhost:15405/infos.ashx 传入指定的id参数值
+            string requestUrl = "http://localhost:15405/infos.ashx?id=" + txtid.Text;
+            //1.0 实例化web请求对象的实例
+            WebRequest request = WebRequest.Create(requestUrl);
+            //2.0 设置其请求方式为get请求
+            request.Method = "get";
+            //3.0 获取服务器响应回来的响应报文对象
+            WebResponse response = request.GetResponse();
+            System.IO.Stream str = response.GetResponseStream();
+
+            //将流转换成字符串
+            string responsebody = "";
+            using (System.IO.StreamReader srd = new System.IO.StreamReader(str))
+            {
+                //将响应报文体中的数据转换成字符串
+                responsebody=srd.ReadToEnd();
+            }
+
+            Response.Write(responsebody);	
+	
+	2、webservices
+		1、web服务的页面扩展名为：.asmx
+		2、web服务是以xml格式来传输数据的
+		由两部分组成:
+		(1)SOAP--Web Service之间的基本通信协议。 本质上 是通过xml来传输的
+		(2)WSDL--Web Service描述语言，它定义了Web Service做什么，怎么做和查询的信息。
+		3、客户端与web服务调用图解在：02 - web服务总结.png
+	
+	3、wcf
+		1、如果想要将当前接口作为wcf服务器，则一定要加上【ServiceContract】 契约
+		2、要想将方法作为wcf服务方法发布给外部调用，则一定要加上    [OperationContract] 契约
+		3 实体类作为wcf方法参数或者返回值的话，则要贴上 [DataContract]
+		4、只有贴上了【DataMember】的属性才能作为wcf服务器方法参数值类传递，否则第三方调用者看不到此属性
+		
+		5、wcf的三种请求响应模式
+			5.1、请求响应模式
+				特点：当客户端发出请求以后一定要等待wcf服务的方法处理完成后才会响应给客户端，此过程中，客户端处于等待过程
+			5.2、双工通讯模式
+				服务端 代码实现步骤：
+				1、在接口(契约)上定义 
+				[ServiceContract(SessionMode = SessionMode.Required  //将当前客户端请求和服务器的响应放在同一个会话中
+				, CallbackContract = typeof(IResult))  // 指定回调接口
+				]
+				
+				2、将双工通讯方法设置成数据报方法
+				  [OperationContract(IsOneWay = true)]
+				  
+				3、定义回调接口IResult，并且要将接口中的方法设置成数据报方法，[OperationContract(IsOneWay = true)]
+				
+				4、在WCF服务实现类Pig的构造函数中实例化回调接口IResult
+				//获取当前客户端请求上下文中的回调接口具体实现类的对象
+				result = System.ServiceModel.OperationContext.Current.GetCallbackChannel<IResult>();
+				
+				服务端app.config的配置
+				1、在双工通讯服务的 <endpoint address="" binding="wsDualHttpBinding" contract="WcfLib.IPig" ></endpoint>
+				参数配置中将binding 设置成 wsDualHttpBinding
+			
+			
+				客户端的代码实现步骤：
+				1、添加wcf服务的引用
+				2、实现双工通讯的回调接口
+				  public class DResult : IPigCallback
+					{
+					public void DispalyResult(string result)
+					{
+						MessageBox.Show(result);
+					}
+				}
+				3、在代理客户端的构造函数中，传入第2步实现的回调接口的具体类对象
+				  PigClient c = new PigClient(new System.ServiceModel.InstanceContext(new DResult()));
+				
+				
+			5.3、数据报模式
+				特点：1、方法返回为 void  2、
+				
+		6、wcf自托管代码的写法
+			
+		7、使用SvcUtil.exe工具来生成wcf的代理类
+			
+		8、wcf服务的子托管
+			如果有需求如下：
+				wcf利用windows服务来托管
+		
+	4、特性
+		1、特性是给框架（asp.net,mvc.net,VS2012）
+		2、特性约定：1、必须以Attribute结尾，2、必须继承 Attribute父类

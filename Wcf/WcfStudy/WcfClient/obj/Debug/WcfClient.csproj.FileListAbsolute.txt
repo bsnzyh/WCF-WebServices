@@ -1,0 +1,10 @@
+I:\Study\Dot_Net_Code\00SpecialTechnology\07WCF&WebServices\Wcf\WcfStudy\WcfClient\bin\Debug\WcfClient.exe
+I:\Study\Dot_Net_Code\00SpecialTechnology\07WCF&WebServices\Wcf\WcfStudy\WcfClient\bin\Debug\WcfClient.pdb
+I:\Study\Dot_Net_Code\00SpecialTechnology\07WCF&WebServices\Wcf\WcfStudy\WcfClient\obj\Debug\WcfClient.Form1.resources
+I:\Study\Dot_Net_Code\00SpecialTechnology\07WCF&WebServices\Wcf\WcfStudy\WcfClient\obj\Debug\WcfClient.Properties.Resources.resources
+I:\Study\Dot_Net_Code\00SpecialTechnology\07WCF&WebServices\Wcf\WcfStudy\WcfClient\obj\Debug\WcfClient.csproj.GenerateResource.Cache
+I:\Study\Dot_Net_Code\00SpecialTechnology\07WCF&WebServices\Wcf\WcfStudy\WcfClient\obj\Debug\WcfClient.exe
+I:\Study\Dot_Net_Code\00SpecialTechnology\07WCF&WebServices\Wcf\WcfStudy\WcfClient\obj\Debug\WcfClient.pdb
+I:\Study\Dot_Net_Code\00SpecialTechnology\07WCF&WebServices\Wcf\WcfStudy\WcfClient\bin\Debug\WcfClient.exe.config
+I:\Study\Dot_Net_Code\00SpecialTechnology\07WCF&WebServices\Wcf\WcfStudy\WcfClient\obj\Debug\WcfClient.Form2.resources
+I:\Study\Dot_Net_Code\00SpecialTechnology\07WCF&WebServices\Wcf\WcfStudy\WcfClient\obj\Debug\WcfClient.csprojResolveAssemblyReference.cache
